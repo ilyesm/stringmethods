@@ -1,6 +1,8 @@
 In order to help you guys with creating our program, we have added a few tips below!
 
-We will use each one of the strings for the following function:
+You will have to create a love calculator that return a percentage after an input of two names.
+In order to do this you will need to come up with an algorithm that uses all the following functions:
+
 --
 + for concatenation
 .equals(String) -> to compare a string to a speciefied object
