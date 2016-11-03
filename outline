@@ -1,2 +1,14 @@
 The goal is to create a script which will compare two names (inputs)
-and give the percentage compatibility (using strings and comparing them)
+and give the percentage compatibility (using strings and comparing them).
+
+We will need to find use for the following strings:
+---
++ for concatenation
+.equals(String)
+.substring(startPos, endPos)
+.length()
+.indexOf(String)
+.compareTo(String)
+.toUpperCase()
+.toLowerCase()
+---
