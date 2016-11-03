@@ -10,5 +10,13 @@ Total out of 20 marks.
 
 ------------------------------------
 14-20
-
+Uses - 
+'+' (concatenation)
+.equals()
+.substring()
+.length()
+.indexOf()
+.compareTo()
+.toUpperCase()
+.toLowerCase()
 ------------------------------------
