@@ -20,10 +20,10 @@ We will need to find use for the following strings:
 We will use each one of the strings for the following function:
 --
 + for concatenation
-.equals(String) ->
-.substring(startPos, endPos) ->
+.equals(String) -> to compare a string to a speciefied object
+.substring(startPos, endPos) -> it specifies index and extends to the end of the string or up to endIndex
 .length() -> find the lenght value for the name (UpperCase and LowerCase)
-.indexOf(String) ->
+.indexOf(String) -> reurn 
 .compareTo(String) -> compare the two values (UpperCase and LowerCase)
 .toUpperCase() -> translate the name to UpperCase to find the lenght with .length()
 .toLowerCase() -> translate the name to LowerCase to find the lenght with .length()
