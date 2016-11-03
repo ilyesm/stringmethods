@@ -2,6 +2,8 @@ The goal is to create a script which will compare two names (inputs)
 and give the percentage compatibility (using strings and comparing them).
 
 We will need to find use for the following strings:
+-
+--
 ---
 + for concatenation
 .equals(String)
@@ -14,3 +16,15 @@ We will need to find use for the following strings:
 ---
 --
 -
+
+We will use each one of the strings for the following function:
+--
++ for concatenation
+.equals(String) ->
+.substring(startPos, endPos) ->
+.length() -> find the lenght value for the name (UpperCase and LowerCase)
+.indexOf(String) ->
+.compareTo(String) -> compare the two values (UpperCase and LowerCase)
+.toUpperCase() -> translate the name to UpperCase to find the lenght with .length()
+.toLowerCase() -> translate the name to LowerCase to find the lenght with .length()
+--
