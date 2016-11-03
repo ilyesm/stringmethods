@@ -1,6 +1,6 @@
 In order to help you guys with creating our program, we have added a few tips below!
 
-You will have to create a love calculator that return a percentage after an input of two names.
+You will have to create a love calculator that return a percentage after the comparison of two Strings .
 In order to do this you will need to come up with an algorithm that uses all the following functions:
 
 --
