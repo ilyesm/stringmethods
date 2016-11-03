@@ -1,6 +1,8 @@
 The goal is to create a script which will compare two names (inputs)
 and give the percentage compatibility (using strings and comparing them).
 
+Hint: use ASCII values (convert string to total value then compare, just sayin'.)
+
 We will need to find use for the following strings:
 -
 --
@@ -16,3 +18,10 @@ We will need to find use for the following strings:
 ---
 --
 -
+
+For the sake of uniformity, when the two strings "giovanni" & "leti" are compared, 
+the percentage outputted should equal:  xx%.
+
+Take that into account when coding your program, and remember that you must use all string methods stated above.
+
+Good luck.
