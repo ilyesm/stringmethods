@@ -21,7 +21,7 @@ We will use each one of the strings for the following function:
 --
 + for concatenation
 .equals(String) -> to compare a string to a speciefied object
-.substring(startPos, endPos) -> return the words with the index between startPos and endPos
+.substring(startPos, endPos) -> return the letters between startPos and endPos
 .length() -> find the lenght value for the name (UpperCase and LowerCase)
 .indexOf(String) -> return the index within a string of a character
 .compareTo(String) -> compare the two values (UpperCase and LowerCase)
