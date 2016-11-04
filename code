@@ -1,0 +1,45 @@
+/**
+ * Love Calculator
+ * 
+ * @author (Gio, Ilyas, Ben) 
+ * @version (1.0)
+ */
+import java.util.Random;
+
+public class Lovability2
+{
+    // instance variables - replace the example below with your own
+    public String s1;
+    public String s2;
+    public int[] intArray = new int[3];
+    public Random rand = new Random();
+    
+    /**
+     * Constructor for objects of class Lovability2
+     */
+    public Lovability2()
+    {
+        // initialise instance variables
+        
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public String getS(String s1, String s2)
+    {
+        // put your code here
+        return s1 + s2;
+    }
+    
+    public int compareNr(String s1, String s2){
+        int cpr = s1.compareTo(s2);
+        int random = rand.nextInt(10);
+        cpr = cpr * random;
+        intArray[0] = cpr;
+        return intArray[0];
+    }
+}
