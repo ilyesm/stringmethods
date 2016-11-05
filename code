@@ -1,5 +1,5 @@
 /**
- * Love Calculator
+ * Lovability
  * 
  * @author (Gio, Ilyas, Ben) 
  * @version (1.0)
@@ -31,20 +31,11 @@ public class Lovability2
     public int[] intArray = new int[3];
     public Random rand = new Random();
     
-    /**
-     * Constructor for objects of class Lovability2
-     */
     public Lovability2()
     {
         // initialise instance variables
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
     public String getS(String s1, String s2)
     {
         // put your code here
@@ -111,5 +102,10 @@ public class Lovability2
     public boolean check(String s1, String s2){
         ck = s1.equals(s2);
         return ck;
+    }
+    
+    public int getRandomNr(){
+        random = rand.nextInt(2);
+        return intArray[random];
     }
 }
