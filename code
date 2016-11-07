@@ -33,9 +33,6 @@ public class Lovability2
     public int[] intArray = new int[3];
     public Random rand = new Random();
     
-    /**
-     * Constructor for objects of class Lovability2
-     */
     public Lovability2(String string1, String string2)
     {
         s1 = string1;
@@ -52,7 +49,7 @@ public class Lovability2
         cpr = s1.compareTo(s2);
         random = rand.nextInt(10) + 1;
         cpr = cpr * random;
-        intArray[0] = cpr;
+        intArray[0] = Math.abs(cpr);
         return intArray[0];
     }
     
@@ -86,11 +83,12 @@ public class Lovability2
             rslt = i1 - i2;
         }
         rslt = rslt * random;
-        intArray[1] = rslt;
+        intArray[1] = Math.abs(rslt);
         return intArray[1];
     }
     
     public int compareIndx(){
+        intArray[2] = 0;
         x1 = 'o';
         x2 = 'o';
         ind1 = 0;
@@ -109,8 +107,8 @@ public class Lovability2
         return ck;
     }
     
-    public int getRandomNr(){
+    public void printPerc(){
         random = rand.nextInt(2);
-        return intArray[random];
+        System.out.println("Your percentage is: " + intArray[random] + "%.");
     }
 }
