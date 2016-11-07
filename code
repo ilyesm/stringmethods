@@ -4,7 +4,9 @@
  * @author (Gio, Ilyas, Ben) 
  * @version (1.0)
  */
+
 import java.util.Random;
+import java.lang.Math;
 
 public class Lovability2
 {
@@ -31,18 +33,21 @@ public class Lovability2
     public int[] intArray = new int[3];
     public Random rand = new Random();
     
-    public Lovability2()
+    /**
+     * Constructor for objects of class Lovability2
+     */
+    public Lovability2(String string1, String string2)
     {
-        // initialise instance variables
+        s1 = string1;
+        s2 = string2;
     }
-
-    public String getS(String s1, String s2)
+    
+    public String getS()
     {
-        // put your code here
         return s1 + s2;
     }
 
-    public int compareNr(String s1, String s2){
+    public int compareNr(){
         intArray[0] = 0;
         cpr = s1.compareTo(s2);
         random = rand.nextInt(10) + 1;
@@ -51,7 +56,7 @@ public class Lovability2
         return intArray[0];
     }
     
-    public int compareLgt(String s1, String s2){
+    public int compareLgt(){
         intArray[1] = 0;
         rslt = 0;
         c1 = 'a';
@@ -85,7 +90,7 @@ public class Lovability2
         return intArray[1];
     }
     
-    public int compareIndx(String s1, String s2){
+    public int compareIndx(){
         x1 = 'o';
         x2 = 'o';
         ind1 = 0;
@@ -95,11 +100,11 @@ public class Lovability2
         ind2 = s2.indexOf(x2);
         indTot = ind1 + ind2;
         indTot = indTot * random;
-        intArray[2] = indTot;
+        intArray[2] = Math.abs(indTot);
         return intArray[2];
     }
     
-    public boolean check(String s1, String s2){
+    public boolean check(){
         ck = s1.equals(s2);
         return ck;
     }
