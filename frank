@@ -1,0 +1,98 @@
+
+import java.util.Random;
+import java.lang.Math;
+
+
+public class Lovability
+{
+    public String stringValue1;
+    public String stringValue2;
+    public int r = 0;
+    public int comparison = 0;    
+    public char char1 = 'a';
+    public char char2 = 'a';
+    public int integer1 = 0;
+    public int integer2 = 0;
+    public int result = 0;
+    public int number1 = 0;
+    public int number2 = 0;
+    public int indexTotal = 0;
+    public char x1 = 'o';
+    public char x2 = 'o';
+    public int[] intArray = new int[3];
+    public Random rand = new Random();
+    boolean check;                
+    public String getNames()
+    {
+        return stringValue1 + stringValue2;
+    }
+    public Lovability(String s1, String s2)
+    {
+        stringValue1 = s1;
+        stringValue2 = s2;
+    }    
+    public int comparison(){
+        intArray[1] = 0;
+        result = 0;
+        char1 = 'a';
+        integer1 = 0;
+        char2 = 'a';
+        integer2 = 0;
+        r = rand.nextInt(2) + 1;
+        if(stringValue1.length() >= stringValue2.length()){
+            stringValue1 = stringValue1.toUpperCase();
+            stringValue1 = stringValue1.substring(0, 1);
+            char1 = stringValue1.charAt(0);
+            integer1 = (int) char1;
+            stringValue2 = stringValue2.toLowerCase();
+            stringValue2 = stringValue2.substring(0, 1);
+            char2 = stringValue2.charAt(0);
+            integer2 = (int) char2;
+            result = integer2 - integer1;
+        }else{
+            stringValue1 = stringValue1.toLowerCase();
+            stringValue1 = stringValue1.substring(0, 1);
+            char1 = stringValue1.charAt(0);
+            integer1 = (int) char1;
+            stringValue2 = stringValue2.toUpperCase();
+            stringValue2 = stringValue2.substring(0, 1);
+            char2 = stringValue2.charAt(0);
+            integer2 = (int) char2;
+            result = integer1 - integer2;
+        }
+        result = result * r;
+        intArray[1] = Math.abs(result);
+        return intArray[1];
+    }
+     public int compareNr(){
+        intArray[0] = 0;
+        comparison = stringValue1.compareTo(stringValue2);
+        r = rand.nextInt(10) + 1;
+        comparison = comparison * r;
+        intArray[0] = Math.abs(comparison);
+        return intArray[0];
+    }
+   public void printPercentage(){
+        r = rand.nextInt(2);
+        System.out.println("Your lovability is: " + intArray[r] + "%.");
+    }    
+    public boolean check(){
+        check = stringValue1.equals(stringValue2);
+        return check;
+    }
+     public int compareIndex(){
+        intArray[2] = 0;
+        x1 = 'o';
+        x2 = 'o';
+        integer1 = 0;
+        integer2 = 0;
+        r = rand.nextInt(30) + 15;
+        integer1 = stringValue1.indexOf(x1);
+        integer2 = stringValue2.indexOf(x2);
+        indexTotal = integer1 + integer2;
+        indexTotal = indexTotal * r;
+        intArray[2] = Math.abs(indexTotal);
+        return intArray[2];
+    }
+    
+}
